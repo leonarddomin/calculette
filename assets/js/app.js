@@ -3,7 +3,8 @@ const myCalc = new Vue({
     el: '#template',
     data: {
         //
-        number : "0" 
+        number : "0" ,
+        verif: false
     }, 
 // Déclaration de la Méthode //
     methods: {
@@ -12,9 +13,11 @@ const myCalc = new Vue({
             if (this.number == "0") {
                 this.number = ""
                 this.number += nombre
+                this.verif = false
             } 
             else {
                 this.number += nombre
+                this.verif = false
             } 
             console.log(this.number)
         },
@@ -30,6 +33,9 @@ const myCalc = new Vue({
       pourcent: function() {
           this.number = (this.number/100)
       }, 
-     
+     printOperator: function(o){
+        this.number += o 
+        this.verif = true
+     }
     },
 })
