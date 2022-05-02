@@ -1,3 +1,4 @@
+// Léonard et Brice H //
 // Déclaration d'une instance de Vue //
 const myCalc = new Vue({
     el: '#template',
@@ -33,9 +34,10 @@ const myCalc = new Vue({
       pourcent: function() {
           this.number = (this.number/100)
       }, 
+// Vérification pour les Operator //
      printOperator: function(o){
         this.number += o 
         this.verif = true
      }
     },
-})
+}) 
