@@ -30,11 +30,11 @@ body {
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
     "res res res res"
-    "fois divise moins plus"
     "sept huit neuf plus"
-    "quatre cinq six egal"
-    "un deux trois egal"
-    "zero zero virgule egal";
+    "quatre cinq six moins"
+    "un deux trois fois"
+    "zero zero pourcent divise"
+    "AC signe virgule egal";
   height: min(100vh, 100vw, 500px);
   width: min(100vh, 100vw, 500px);
   background-color: #f3f3f3;
@@ -60,6 +60,9 @@ body {
 .virgule { grid-area: virgule; }
 .egal { grid-area: egal; }
 .vide { grid-area: vide; }
+.clear {grid-area: AC;}
+.signe {grid-area: signe;}
+.pourcent {grid-area: pourcent;}
 
 .calc,
 .calc > button,
@@ -90,6 +93,3 @@ body {
   background-color: #006dcc;
   color: #fff;
 } 
-.position{
-    justify-content: center;
-}
