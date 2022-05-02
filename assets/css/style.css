@@ -38,6 +38,7 @@ body {
   height: min(100vh, 100vw, 500px);
   width: min(100vh, 100vw, 500px);
   background-color: #f3f3f3;
+  margin:auto
   
 
 }
@@ -92,4 +93,8 @@ body {
 .egal {
   background-color: #006dcc;
   color: #fff;
-} 
+}  
+footer{ 
+    display: flex;
+    justify-content: center;
+}

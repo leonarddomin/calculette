@@ -12,40 +12,33 @@
     <script src="./assets/js/app.js" defer></script>
     <title>Calculette</title>
 </head>
-
+<!-- Structure de La Calculette -->
 <body>
-    <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Calculatrice</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="position">
-        <div class="calc" id="template">
-            <div class="resultat" id="res">{{ number }}</div>
-            <button @click="print('+')" id="plus" class="plus">+</button>
-            <button @click="print('-')" id="moins" class="moins">-</button>
-            <button @click="print('*')" id="fois" class="fois">*</button>
-            <button @click="print('/')" id="divise" class="divise">/</button>
-            <button @click="print('+/-')" id="signe" class="signe">+/-</button>
-            <button @click="print('%')" id="pourcent" class="pourcent">%</button>
-            <button id="egal" class="egal">=</button>
-            <button @click="print(0)" id="zero" class="nb zero">0</button>
-            <button @click="clear()"  id="AC" class="clear">AC</button>
-            <button @click="print(1)" id="un" class="nb un">1</button>
-            <button @click="print(2)" id="deux" class="nb deux">2</button>
-            <button @click="print(3)" id="trois" class="nb trois">3</button>
-            <button @click="print(4)" id="quatre" class="nb quatre">4</button>
-            <button @click="print(5)" id="cinq" class="nb cinq">5</button>
-            <button @click="print(6)" id="six" class="nb six">6</button>
-            <button @click="print(7)" id="sept" class="nb sept">7</button>
-            <button @click="print(8)" id="huit" class="nb huit">8</button>
-            <button @click="print(9)" id="neuf" class="nb neuf">9</button>
-            <button @click="print(',')" id="virgule" class="virgule">,</button>
-            <div class="vide"></div>
-        </div>
+    <div class="calc" id="template">
+        <div class="resultat" id="res">{{ number }}</div>
+        <button @click="print('+')" id="plus" class="plus">+</button>
+        <button @click="print('-')" id="moins" class="moins">-</button>
+        <button @click="print('*')" id="fois" class="fois">*</button>
+        <button @click="print('/')" id="divise" class="divise">/</button>
+        <button @click="print('+/-')" id="signe" class="signe">+/-</button>
+        <button @click="pourcent()" id="pourcent" class="pourcent">%</button>
+        <button @click="results()" id="egal" class="egal">=</button>
+        <button @click="print(0)" id="zero" class="nb zero">0</button>
+        <button @click="clear()" id="AC" class="clear">AC</button>
+        <button @click="print(1)" id="un" class="nb un">1</button>
+        <button @click="print(2)" id="deux" class="nb deux">2</button>
+        <button @click="print(3)" id="trois" class="nb trois">3</button>
+        <button @click="print(4)" id="quatre" class="nb quatre">4</button>
+        <button @click="print(5)" id="cinq" class="nb cinq">5</button>
+        <button @click="print(6)" id="six" class="nb six">6</button>
+        <button @click="print(7)" id="sept" class="nb sept">7</button>
+        <button @click="print(8)" id="huit" class="nb huit">8</button>
+        <button @click="print(9)" id="neuf" class="nb neuf">9</button>
+        <button @click="print(',')" id="virgule" class="virgule">,</button>
+        <div class="vide"></div>
     </div>
 </body>
+<footer>
+    <p>Léonard Domin et Brice Helyon</p>
+</footer>
 </html>
